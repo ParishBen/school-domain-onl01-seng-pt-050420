@@ -26,3 +26,4 @@ end
   end
 end
   roster.collect do |grade, studentname|
+    roster[grade] = studentname.sort
