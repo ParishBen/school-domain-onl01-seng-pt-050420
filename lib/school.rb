@@ -8,7 +8,7 @@ class School
     roster= {}
   end
   
-  end 
+   
   def add_student(studentname,age)
     roster[age]=[]
     roster[age] << studentname
