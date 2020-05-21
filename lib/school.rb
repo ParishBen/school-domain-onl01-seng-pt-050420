@@ -7,7 +7,10 @@ class School
     @name=name
   end
   
-  roster= {}
+  def initialize(roster)
+    @roster= roster
+    @roster = {}
+  end 
   def add_student(studentname,age)
     roster[age]=[]
     roster[age] << studentname
