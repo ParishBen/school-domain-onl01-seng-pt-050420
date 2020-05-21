@@ -8,5 +8,7 @@ class School
   end
   
   roster= {}
-  
+  def add_student(studentname,age)
+    roster << age : studentname
+  end
   
