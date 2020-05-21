@@ -18,12 +18,14 @@ def grade(grade)
 end
 
   def sort
-    sorted = {}
-    roster.each do |grade, students|
-      sorted[grade] = students.sort
-    end
-    sorted
-  end
-end
-  roster.collect do |grade, studentname|
+    roster.collect do |grade, studentname|
     roster[grade] = studentname.sort
+      end
+   roster
+   end
+ end
+#sorted = {}
+ #   roster.each do |grade, students|
+  #    sorted[grade] = students.sort
+   # end
+    #sorted
