@@ -9,10 +9,10 @@ class School
   end
   
   def add_student(studentname,grade)
-    @studentname=studentname
-    @roster[grade]= []
-    @roster[grade] << studentname
+    roster[grade]= []
+    roster[grade] << studentname
   end
+
 def grade(grade)
   roster[grade]
 end
@@ -25,4 +25,4 @@ end
     sorted
   end
 end
-  roster
+  roster.collect do |grade, studentname|
